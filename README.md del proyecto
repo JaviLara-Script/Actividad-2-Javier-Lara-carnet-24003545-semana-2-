@@ -1,0 +1,51 @@
+# Proyecto de Gestión de Hábitos
+
+Este proyecto es una aplicación web para gestionar hábitos, desarrollada con **Next.js** para el frontend y **Express.js** con **MongoDB** para el backend.
+
+## Instalación y Configuración
+
+### 1. Clonar el Repositorio
+```sh
+git clone https://github.com/tu_usuario/proyecto-habitos.git
+cd proyecto-habitos
+```
+
+### 2. Configurar el Backend
+```sh
+cd backend
+npm install
+```
+Crear un archivo `.env` en la carpeta `backend` con el siguiente contenido:
+```
+MONGO_URI=tu_conexion_mongodb
+PORT=5000
+```
+Iniciar el servidor backend:
+```sh
+npm start
+```
+
+### 3. Configurar el Frontend
+```sh
+cd ../frontend
+npm install
+```
+Iniciar el servidor frontend:
+```sh
+npm run dev
+```
+
+## Uso
+1. Acceder a `http://localhost:3000` para ver la aplicación.
+2. Verificar que los hábitos se cargan correctamente desde el backend.
+
+## Estructura del Proyecto
+- `backend/` → Servidor Express.js y conexión a MongoDB.
+- `frontend/` → Aplicación Next.js con Redux para la gestión de estados.
+
+## Notas
+- Asegúrate de que MongoDB esté en ejecución antes de iniciar el backend.
+- La API se encuentra en `http://localhost:5000/habits`.
+
+---
+Desarrollado como parte de la Actividad 2 de Gestión de Estados en Next.js.
